@@ -31,10 +31,12 @@ CloudWalkGps is an example project to demonstrate how to create a user location 
    Open terminal in this project and use these commands:
 
    flutter pub get
+   
    cd ios
+   
    pod update
    
-3. Run the Flutter application:
+4. Run the Flutter application:
 
    
    flutter run
