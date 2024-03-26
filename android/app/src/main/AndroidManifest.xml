@@ -6,7 +6,7 @@
         android:label="cloudwalk_gps"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
-        <meta-data android:name="com.google.android.geo.API_KEY" android:value="API_TOKEN_MAPS"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyDrlb199ZBWoYrLjCdXX8cr-ONVOos_d6Y"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"

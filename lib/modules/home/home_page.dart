@@ -20,28 +20,18 @@ class HomePage extends GetView<HomeController> {
           return Stack(
             children: [
               GoogleMap(
-                initialCameraPosition: CameraPosition(
-                  target: controller.latlong,
-                  zoom: 14.4746,
-                ),
-                buildingsEnabled: false,
-                zoomControlsEnabled: false,
-                myLocationEnabled: false,
-                compassEnabled: false,
+                initialCameraPosition: CameraPosition(target: controller.latlong, zoom: 14),
                 myLocationButtonEnabled: false,
                 onMapCreated: (GoogleMapController googleMapsController) =>
                     controller.mapsController.complete(googleMapsController),
                 markers: controller.markers,
               ),
-              Positioned(
-                bottom: 20,
-                right: 20,
+              Align(
+                alignment: Alignment.bottomCenter,
                 child: Visibility(
                   visible: controller.status.isSuccess,
-                  child: SafeArea(
-                    top: false,
-                    right: false,
-                    left: false,
+                  child: Padding(
+                    padding: const EdgeInsets.only(bottom: 40),
                     child: ElevatedButton.icon(
                       style: ElevatedButton.styleFrom(backgroundColor: Colors.blue),
                       onPressed: controller.getLocalizationUser,
