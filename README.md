@@ -42,8 +42,6 @@ CloudWalkGps is an example project to demonstrate how to create a user location 
    flutter run
    
 
-Note: Maps keys were used in this project with restrictions for each platform, Android and IOS.
-These keys are published for testing purposes, in a real environment, this is not recommended.
    
 
 ## Contribution
