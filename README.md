@@ -23,7 +23,7 @@ CloudWalkGps is an example project to demonstrate how to create a user location 
 
 1. Clone this repository:
 
-   git clone https://github.com/vinihashtag/cloudwalk.git
+   git clone https://github.com/hello-doc/cloudwalkgps.git
    
 
 2. Install mobile dependencies:
@@ -34,14 +34,13 @@ CloudWalkGps is an example project to demonstrate how to create a user location 
    
    cd ios
    
-   pod update
+   pod install --repo-update
    
 4. Run the Flutter application:
 
    
    flutter run
    
-
    
 
 ## Contribution
